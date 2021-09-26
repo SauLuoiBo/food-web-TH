@@ -15,11 +15,15 @@ const Wrapper = styled.button`
 	font-size: 1.7rem;
 	padding: 0.4rem 4rem;
 	border-radius: 5rem;
-	margin-top: 1rem;
+	margin: 1rem 0;
 	background: none;
 	color: #333;
 	cursor: pointer;
 	border: 0.2rem solid var(--color-yellow);
+
+    :hover{
+        background-color: var(--color-yellow);
+    }
 `;
 
 export default ButtonFood;
