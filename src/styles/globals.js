@@ -78,11 +78,12 @@ export default createGlobalStyle`
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   p{
     font-size: 2rem;
+    color: ${props=>props.theme.colors.main};
   }
 
   h5{
