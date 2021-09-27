@@ -9,7 +9,7 @@ const theme = {
 		colors: {
 			main: "#443",
 			background1: "yelow",
-			background2: "pink",
+			background2: "#282727",
 			primary: "red",
 			text: 'black',
 			yellow: '#F7CA3E',

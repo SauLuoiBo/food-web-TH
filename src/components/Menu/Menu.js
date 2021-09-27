@@ -27,7 +27,7 @@ const Menu = () => {
       <Container>
         <WrapperMenu>
           <Stt>
-            Our Delicious <span>Menu</span>
+            <h2>Our Delicious <span>Menu</span></h2>
           </Stt>
           <Select>
             <ButtonFood text="Breack" />

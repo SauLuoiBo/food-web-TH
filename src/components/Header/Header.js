@@ -108,7 +108,7 @@ const Btn = styled.div`
 const MenuCol = styled.div`
 	background-color: var(--color-yellow);
 	position: fixed;
-	top: 9rem;
+	top: 11rem;
 	width: 100%;
 	z-index: 50;
 	display: none;
