@@ -39,6 +39,7 @@ const WrapperHome = styled.div`
 	z-index: 0;
 	overflow: hidden;
 	flex-direction: row;
+	margin: 20rem 0;
 `;
 
 const Content = styled.div`

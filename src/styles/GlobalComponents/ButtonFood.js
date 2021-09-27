@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ButtonFood = (props) => {
 	return (
-		<Wrapper onClick={()=>props.onClick()} inputColor={props.isSet} >
+		<Wrapper onClick={() => props.onClick()} inputColor={props.isSet}>
 			<h5>{props.text}</h5>
 		</Wrapper>
 	);
@@ -20,11 +20,11 @@ const Wrapper = styled.button`
 	color: #333;
 	cursor: pointer;
 	border: 0.2rem solid var(--color-yellow);
-background-color: ${props => props.inputColor ? '#F7CA3E' : "#fff"};
+	background-color: ${(props) => (props.inputColor ? "#F7CA3E" : "#fff")};
 
-    :hover{
-        background-color: var(--color-yellow);
-    }
+	:hover {
+		background-color: var(--color-yellow);
+	}
 `;
 
 export default ButtonFood;

@@ -64,7 +64,7 @@ const HeaderWrapper = styled.nav`
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	@media ${(props) => props.theme.breakpoints.md} {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		padding: 0 2rem;
 
 		h2{

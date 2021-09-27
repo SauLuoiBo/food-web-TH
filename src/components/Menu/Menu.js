@@ -79,6 +79,7 @@ const WrapperMenu = styled.div`
 	/* position: relative; */
 	z-index: 0;
 	overflow: hidden;
+	
 	/* flex-direction: row; */
 
 	span {
@@ -110,6 +111,7 @@ const ContentWrapper = styled.div`
 	z-index: 0;
 	overflow: hidden;
 	/* flex-direction: row; */
+	margin-bottom: 20rem;
 `;
 
 const Content = styled.div`

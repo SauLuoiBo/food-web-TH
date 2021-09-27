@@ -34,6 +34,7 @@ const GalleryWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   /* flex-wrap: wrap; */
   /* position: relative; */
   z-index: 0;
@@ -51,5 +52,6 @@ const ProductWrapper = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 23rem;
 `
 export default Gallery;

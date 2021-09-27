@@ -56,6 +56,7 @@ const FormWrapper = styled.div`
   overflow: hidden;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%);
   border-radius: 1rem;
+  margin-bottom: 30rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
     margin: 2rem 6rem;
