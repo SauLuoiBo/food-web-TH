@@ -80,6 +80,9 @@ export default createGlobalStyle`
   h2 {
     font-size: 4.5rem;
   }
+  h3 {
+    font-size: 2.2rem;
+  }
 
   p{
     font-size: 2rem;
