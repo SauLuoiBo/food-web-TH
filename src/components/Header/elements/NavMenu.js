@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { dataHeader } from '../data/dataHeader'
-import {Link as LinkS} from 'react-scroll'
+import { Link as LinkS, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import * as Scroll from 'react-scroll';
 
 
 
@@ -10,7 +11,7 @@ const NavMenu = () => {
     return (
         <Wrapper>
             {dataHeader.map((menu, index) =>
-                <NavLink to={menu.link} key = {index} activeClass="active" duration={500}>
+                <NavLink to={menu.link} key = {index} activeClass="active" duration={500}  spy={true} smooth={true} >
                     <h3>{menu.title}</h3>
                 </NavLink>
                 )}
@@ -31,8 +32,15 @@ const Wrapper = styled.ul`
 `
 
 const NavLink = styled(LinkS)`
-    .active{
-        color: var(--color-yellow);
+    font-size: 3rem;
+    color: var(--color-main);
+
+    :hover{
+        color: var(--color-primary);
+    }
+
+    &.active{
+        color: var(--color-primary);
     }
 `
 

@@ -24,6 +24,7 @@ const Wrapper = styled.div`
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,.7);
+    border-radius: 2rem;
   }
 
   h3{
@@ -40,6 +41,7 @@ const Wrapper = styled.div`
   :hover{
       ::before{
         top: 0%; 
+        border-radius: 2rem;
       }
       h3{
           top: 50%;
@@ -51,6 +53,7 @@ const Wrapper = styled.div`
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 2rem;
   }
 `;
 

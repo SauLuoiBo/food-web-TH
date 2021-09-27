@@ -65,7 +65,7 @@ export default createGlobalStyle`
 
   a, button, img {
     cursor: pointer;
-    color: var(--color-main);
+    /* color: var(--color-main); */
   }
 
   h1,h2,h3,h4,h5,h6,button {
