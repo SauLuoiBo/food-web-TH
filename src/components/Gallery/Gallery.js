@@ -6,7 +6,7 @@ import { dataGallery } from "./data/dataGallery";
 
 const Gallery = () => {
   return (
-    <Wrapper>
+    <Wrapper id='gallery'>
       <Container>
         <GalleryWrapper>
           <h2>

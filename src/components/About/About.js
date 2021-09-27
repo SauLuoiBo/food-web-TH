@@ -8,7 +8,7 @@ import ButtonFood from "../../styles/GlobalComponents/ButtonFood";
 
 const About = () => {
 	return (
-		<Wrapper>
+		<Wrapper id='about'>
 			<Container>
 				<WrapperAbout>
 					<Img>

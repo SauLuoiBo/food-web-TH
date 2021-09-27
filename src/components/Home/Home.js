@@ -7,7 +7,7 @@ import data from "./data/dataHome";
 
 const Home = () => {
 	return (
-		<Wrapper>
+		<Wrapper id='home'>
 			<Container>
 				<WrapperHome>
 					<Content>

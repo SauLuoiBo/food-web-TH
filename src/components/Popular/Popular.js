@@ -5,7 +5,7 @@ import { Container } from "../../styles/GlobalComponents";
 
 const Popular = () => {
   return (
-    <Wrapper>
+    <Wrapper id='popular'>
       <Container>
         <PopularWrapper><h2>Most <span>Popular</span> Foods </h2></PopularWrapper>
       </Container>

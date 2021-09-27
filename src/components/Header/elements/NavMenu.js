@@ -1,16 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { dataHeader } from '../data/dataHeader'
+import {Link as LinkS} from 'react-scroll'
 
 
 
 const NavMenu = () => {
+
     return (
         <Wrapper>
             {dataHeader.map((menu, index) =>
-                <a href={menu.link} key = {index}>
+                <NavLink to={menu.link} key = {index} activeClass="active" duration={500}>
                     <h3>{menu.title}</h3>
-                </a>
+                </NavLink>
                 )}
         </Wrapper>
     )
@@ -26,6 +28,12 @@ const Wrapper = styled.ul`
     @media ${(props) => props.theme.breakpoints.lg} {
 		flex-direction: column;
 	}
+`
+
+const NavLink = styled(LinkS)`
+    .active{
+        color: var(--color-yellow);
+    }
 `
 
 

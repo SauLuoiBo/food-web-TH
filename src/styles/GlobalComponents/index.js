@@ -20,6 +20,6 @@ export const Container = styled.div`
         }
 
 		@media ${(props) => props.theme.breakpoints.sm} {
-        margin: 0 0.2rem;
+        margin: 0 2rem;
         }
 `;

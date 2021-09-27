@@ -3,27 +3,27 @@
 export const dataHeader = [
     {
         title: 'Home',
-        link: '/'
+        link: 'home'
     },
     {
         title: 'About',
-        link: '/'
+        link: 'about'
     },
     {
         title: 'Menu',
-        link: '/'
+        link: 'menu'
     },
     {
         title: 'Popular',
-        link: '/'
+        link: 'popular'
     },
     {
         title: 'Gallery',
-        link: '/'
+        link: 'gallery'
     },
     {
         title: 'Older',
-        link: '/'
+        link: 'older'
     },
     
     

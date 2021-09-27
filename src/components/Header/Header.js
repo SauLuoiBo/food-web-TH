@@ -15,9 +15,11 @@ const Header = () => {
 		);
 	};
 
+	
+
 	return (
 		<>
-			<Wrapper>
+			<Wrapper id='header'>
 				<Container>
 					<HeaderWrapper>
 						<Logo>
@@ -62,6 +64,13 @@ const HeaderWrapper = styled.nav`
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	@media ${(props) => props.theme.breakpoints.md} {
+		padding: 0 2rem;
+
+		h2{
+			font-size: 3.5rem;
+		}
+	}
 `;
 
 const Logo = styled.div`
@@ -108,7 +117,7 @@ const Btn = styled.div`
 const MenuCol = styled.div`
 	background-color: var(--color-yellow);
 	position: fixed;
-	top: 11rem;
+	top: 9.5rem;
 	width: 100%;
 	z-index: 50;
 	display: none;
