@@ -1,7 +1,7 @@
 
 const content = {
-    title: "We Belive Good Food Offer Great Smile",
-    main: "Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Iure, Odit Distinctio Error Corporis Adipisci Molestias Eveniet Optio Quaerat Tempore Asperiores!"
+    title: "I Belive Good Food Offer Great Smile",
+    main: "With grilling season just around the corner, now's a good time to bone up on your basics so that you'll be ready to fire up that kettle on the first lazy day of summer"
 }
 
 export default content

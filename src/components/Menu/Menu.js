@@ -176,6 +176,7 @@ const Text = styled.div`
 	margin-left: 2rem;
 	margin-bottom: 2rem;
 	text-transform: none;
+	text-align: justify;
 `;
 
 const Stt = styled.div``;

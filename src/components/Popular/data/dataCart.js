@@ -6,22 +6,22 @@ import img4 from '../../../assets/images/product-4.jpg'
 export const dataCart = [
     {
         img: img1,
-        name: 'Delicious Food',
-        cost: '$30.00'
+        name: 'Gà Rán',
+        cost: '30'
     },
     {
         img: img2,
-        name: 'Delicious Food',
-        cost: '$30.00'
+        name: 'Nước ép',
+        cost: '10'
     },
     {
         img: img3,
-        name: 'Delicious Food',
-        cost: '$30.00'
+        name: 'Nem cuốn',
+        cost: '20'
     },
     {
         img: img4,
-        name: 'Delicious Food',
-        cost: '$30.00'
+        name: 'Mỳ ý',
+        cost: '100'
     },
 ]

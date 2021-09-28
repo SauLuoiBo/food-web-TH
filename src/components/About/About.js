@@ -51,6 +51,8 @@ const Content = styled.div`
 	flex: 1 1 39rem;
 	justify-content: center;
 	text-align: left;
+	text-transform: none;
+	text-align: justify;
 
 	/* a{
         justify-content: center;

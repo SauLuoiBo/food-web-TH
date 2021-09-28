@@ -59,7 +59,7 @@ export const dataFooter3 = [
     },
     {
         icon: '',
-        text: 'older'
+        text: 'order'
     },
 ]
 

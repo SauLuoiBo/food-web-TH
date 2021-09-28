@@ -45,10 +45,10 @@ const Older = () => {
             <div>
               <input type="text"  value={newOrder.name} onChange={(e)=>setNewOrder({ ...newOrder, name: e.target.value })} placeholder="Your Name" />
               <input type="text" placeholder="Your Email" />
-              <input type="text" placeholder="Your Password" />
+              <input type="text" placeholder="Your Address" />
               <input type="number" placeholder="Your Number" />
               <textarea placeholder="Request" cols='10' rows='30' value={newOrder.request} onChange={(e)=>setNewOrder({ ...newOrder, request: e.target.value })} />
-              <ButtonFood text="Older Now" onClick={()=>too()}/>
+              <ButtonFood text="Order Now" onClick={()=>too()}/>
             </div>
             <Img>
               <img src={older} alt="older" />

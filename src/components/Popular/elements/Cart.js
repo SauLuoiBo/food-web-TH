@@ -20,7 +20,7 @@ const Cart = (props) => {
 				<i className="fas fa-star" />
 				<i className="fas fa-star" />
 			</div>
-			<p>{props.cost}</p>
+			<p>giá: {props.cost} <i className="fas fa-heart red"></i></p>
 			<Link to='older' duration={1000}  spy={true} smooth={true}>
 				<ButtonFood text="Add To Cart" onClick={() => console.log("dassda")} />
 			</Link>
@@ -52,6 +52,10 @@ const Wrapper = styled.div`
 	i {
 		color: var(--color-yellow);
 		margin: 0 0.2rem;
+
+		&.red{
+			color: red;
+		}
 	}
 `;
 

@@ -11,8 +11,8 @@ export const dataMenu = [
     },
     {
         stt: '02.',
-        title: 'We Serve Best Food In The Country',
-        text: 'Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Illum, Vero?'
+        title: 'Bữa Trưa - Bánh Mỳ kẹp',
+        text: '"Mình làm rất ngon, mọi người có cơ hội hãy thưởng thức nhé"'
     },
     {
         stt: '03.',

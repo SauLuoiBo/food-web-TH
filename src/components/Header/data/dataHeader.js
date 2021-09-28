@@ -22,7 +22,7 @@ export const dataHeader = [
         link: 'gallery'
     },
     {
-        title: 'Older',
+        title: 'Order',
         link: 'older'
     },
     
