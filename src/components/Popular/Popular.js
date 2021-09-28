@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import bg from "../../assets/images/popular-bg.jpg";
 import { Container } from "../../styles/GlobalComponents";
+import { dataCart } from "./data/dataCart";
 import Cart from "./elements/Cart";
 
 const Popular = () => {
@@ -13,10 +14,10 @@ const Popular = () => {
 						Most <span>Popular</span> Foods{" "}
 					</h2>
 					<CartWrapper>
-						<Cart />
-						<Cart />
-						<Cart />
-						<Cart />
+						{dataCart.map((data, index)  => 
+							<Cart key={index} name={data.name} img={data.img} cost={data.cost} />
+						)}
+						
 					</CartWrapper>
 				</PopularWrapper>
 			</Container>

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { dataHeader } from '../data/dataHeader'
-import { Link as LinkS, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import * as Scroll from 'react-scroll';
+import { Link as LinkS } from 'react-scroll'
+// import * as Scroll from 'react-scroll';
 
 
 

@@ -1,23 +1,31 @@
 import React from "react";
+import { Link } from "react-scroll";
 import styled from "styled-components";
-import img1 from "../../../assets/images/product-1.jpg";
+import { Fade } from "react-reveal";
+
 import ButtonFood from "../../../styles/GlobalComponents/ButtonFood";
 
-const Cart = () => {
+const Cart = (props) => {
 	return (
+		<Fade right>
+
+		
 		<Wrapper>
-			<img src={img1} alt="asd" />
-			<h3>Delicious Food</h3>
+			<img src={props.img} alt="asd" />
+			<h3>{props.name}</h3>
 			<div>
 				<i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
+				<i className="fas fa-star" />
+				<i className="fas fa-star" />
+				<i className="fas fa-star" />
+				<i className="fas fa-star" />
 			</div>
-			<p>$30.00</p>
-			<ButtonFood text="Add To Cart" />
+			<p>{props.cost}</p>
+			<Link to='older' duration={1000}  spy={true} smooth={true}>
+				<ButtonFood text="Add To Cart" onClick={() => console.log("dassda")} />
+			</Link>
 		</Wrapper>
+		</Fade>
 	);
 };
 
@@ -41,10 +49,10 @@ const Wrapper = styled.div`
 		border-radius: 2rem;
 	}
 
-    i{
-        color: var(--color-yellow);
-        margin: 0 0.2rem;
-    }
+	i {
+		color: var(--color-yellow);
+		margin: 0 0.2rem;
+	}
 `;
 
 export default Cart;

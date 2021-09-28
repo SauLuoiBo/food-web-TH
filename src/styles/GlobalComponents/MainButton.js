@@ -1,11 +1,13 @@
 import styled from "styled-components"
 
-const MainButton = styled.div`
+const MainButton = styled.button`
+
 width: fit-content;
 border: var(--border);
 border-radius: var(--border-radius);
 padding: 0.9rem 1.5rem;
 cursor: pointer;
+text-align: center;
 /* transition: all .2s linear; */
 
 p {

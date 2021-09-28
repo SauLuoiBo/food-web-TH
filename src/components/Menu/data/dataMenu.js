@@ -6,8 +6,8 @@ import img4 from '../../../assets/images/menu4.jpg'
 export const dataMenu = [
     {
         stt: '01.',
-        title: 'We Serve Best Food In The Country',
-        text: 'Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Illum, Vero?'
+        title: 'Bữa Sáng - Phở Bòa',
+        text: '"Phở bò xịn sò chắc phải rất cầu kỳ nhưng mà thôi mình làm gì cũng tối giản cho nhẹ nhàng, vẫn thấy ngon"'
     },
     {
         stt: '02.',
@@ -16,13 +16,13 @@ export const dataMenu = [
     },
     {
         stt: '03.',
-        title: 'We Serve Best Food In The Country',
-        text: 'Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Illum, Vero?'
+        title: 'Bữa Tối - Mỳ gói yêu thương',
+        text: '"Ăn 1 ly mỳ để kết thúc một ngày làm việc"'
     },
     {
         stt: '04.',
-        title: 'We Serve Best Food In The Country',
-        text: 'Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Illum, Vero?'
+        title: 'Bữa đêm - Lẩu đêm',
+        text: '"Ngày nghỉ lễ, thay vì ra hàng quán đông đúc, chị em hãy làm chuẩn bị các món lẩu tuyệt ngon cho gia đình mình thưởng thức."'
     },
 ]
 

@@ -7,7 +7,6 @@ import { dataMenu, dataMenuImg } from "./data/dataMenu";
 const Menu = () => {
 	const [imgNumber, setImgNumber] = React.useState(0);
 
-
 	const List = () => {
 		return (
 			<>
@@ -36,23 +35,36 @@ const Menu = () => {
 						</h2>
 					</Stt>
 					<Select>
-						<ButtonFood onClick={() => setImgNumber(0)}  isSet={imgNumber===0} text="Buổi Sáng" />
-						<ButtonFood onClick={() => setImgNumber(1)} isSet={imgNumber===1} text="buổi Trưa" />
-						<ButtonFood onClick={() => setImgNumber(2)} isSet={imgNumber===2} text="Buổi Tối" />
-						<ButtonFood onClick={() => setImgNumber(3)}  isSet={imgNumber===3} text="Ăn đêm" />
+						<ButtonFood
+							onClick={() => setImgNumber(0)}
+							isSet={imgNumber === 0}
+							text="Buổi Sáng"
+						/>
+						<ButtonFood
+							onClick={() => setImgNumber(1)}
+							isSet={imgNumber === 1}
+							text="buổi Trưa"
+						/>
+						<ButtonFood
+							onClick={() => setImgNumber(2)}
+							isSet={imgNumber === 2}
+							text="Buổi Tối"
+						/>
+						<ButtonFood
+							onClick={() => setImgNumber(3)}
+							isSet={imgNumber === 3}
+							text="Ăn đêm"
+						/>
 					</Select>
 				</WrapperMenu>
 				<ContentWrapper>
-					<Img >
+					<Img>
 						{dataMenuImg.map((data, index) => {
-              return (
-                <div key={index}>
-                  {index===imgNumber &&(
-                    <img src={data.img} alt='img' />
-                  )}
-                </div>
-              )
-              
+							return (
+								<div key={index}>
+									{index === imgNumber && <img src={data.img} alt="img" />}
+								</div>
+							);
 						})}
 					</Img>
 					<Content>
@@ -75,12 +87,16 @@ const WrapperMenu = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	/* flex-wrap: wrap; */
 	/* position: relative; */
 	z-index: 0;
 	overflow: hidden;
-	
+
 	/* flex-direction: row; */
+	@media ${(props) => props.theme.breakpoints.md} {
+		margin: 5rem 0;
+	}
 
 	span {
 		color: var(--color-yellow);
@@ -159,6 +175,7 @@ const Text = styled.div`
 	width: 100%;
 	margin-left: 2rem;
 	margin-bottom: 2rem;
+	text-transform: none;
 `;
 
 const Stt = styled.div``;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container } from "../../styles/GlobalComponents";
 import logo from "../../assets/images/logo-img.png";
 import NavMenu from "./elements/NavMenu";
+import { Fade } from "react-reveal";
 
 const Header = () => {
 	const [isOpen, setIsOpen] = React.useState(false);
@@ -10,16 +11,16 @@ const Header = () => {
 	const MenuMobile = () => {
 		return (
 			<MenuCol>
-				<NavMenu />
+				<Fade top collapse>
+					<NavMenu />
+				</Fade>
 			</MenuCol>
 		);
 	};
 
-	
-
 	return (
 		<>
-			<Wrapper id='header'>
+			<Wrapper id="header">
 				<Container>
 					<HeaderWrapper>
 						<Logo>
@@ -42,6 +43,7 @@ const Header = () => {
 					</HeaderWrapper>
 				</Container>
 			</Wrapper>
+
 			{isOpen ? <MenuMobile /> : ""}
 		</>
 	);
@@ -67,7 +69,7 @@ const HeaderWrapper = styled.nav`
 	@media ${(props) => props.theme.breakpoints.lg} {
 		padding: 0 2rem;
 
-		h2{
+		h2 {
 			font-size: 3.5rem;
 		}
 	}

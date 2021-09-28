@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import home from "../../assets/images/home-img.png";
 import { Container } from "../../styles/GlobalComponents";
-import ButtonFood from "../../styles/GlobalComponents/ButtonFood";
+import MainButton from "../../styles/GlobalComponents/MainButton";
 import data from "./data/dataHome";
+import { Link as LinkS } from 'react-scroll'
+import { Fade } from "react-reveal";
+
 
 const Home = () => {
 	return (
@@ -13,10 +16,18 @@ const Home = () => {
 					<Content>
 						<h2>{data.title}</h2>
 						<p>{data.main}</p>
-						<ButtonFood text="Get Start" />
+						{/* <ButtonFood text="Get Start" /> */}
+						<LinkS to='older'  duration={1000}  spy={true} smooth={true}>
+						<MainButton>
+						<h3>Get start</h3>
+						</MainButton>
+						</LinkS>
 					</Content>
 					<Img>
-						<img src={home} alt="home" />
+					<Fade top >
+					<img src={home} alt="home" />
+					</Fade>
+						
 					</Img>
 				</WrapperHome>
 			</Container>
@@ -35,11 +46,15 @@ const WrapperHome = styled.div`
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	gap: 1rem;
 	position: relative;
 	z-index: 0;
 	overflow: hidden;
 	flex-direction: row;
 	margin: 20rem 0;
+	@media ${(props) => props.theme.breakpoints.md} {
+		margin: 5rem 0;
+	}
 `;
 
 const Content = styled.div`

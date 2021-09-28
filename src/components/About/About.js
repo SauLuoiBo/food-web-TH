@@ -11,13 +11,11 @@ const About = () => {
 		<Wrapper id='about'>
 			<Container>
 				<WrapperAbout>
-					<Img>
-						{/* <img src={about} alt="home" /> */}
-					</Img>
+					<Img />
 					<Content>
 						<h2>{data.title}</h2>
 						<p>{data.main}</p>
-						<ButtonFood text="Learn More" />
+						<ButtonFood text="Learn More" onClick={()=>{console.log('learn')}}/>
 					</Content>
 				</WrapperAbout>
 			</Container>
@@ -29,6 +27,10 @@ const Wrapper = styled.section`
 	padding-top: 10rem;
 	display: block;
 	width: 100%;
+	/* @media ${(props) => props.theme.breakpoints.lg} {
+	
+		padding-top: 1rem;
+	} */
 `;
 
 const WrapperAbout = styled.div`
@@ -41,6 +43,7 @@ const WrapperAbout = styled.div`
 	overflow: hidden;
 	flex-direction: row;
 	margin: 20rem 0;
+	gap: 1rem;
 `;
 
 const Content = styled.div`
