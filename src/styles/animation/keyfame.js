@@ -1,11 +1,8 @@
 import { keyframes } from "styled-components";
 
 export const move = keyframes`
-    0%, 100% {
-    transform: translateY(0rem);
-    }
-    50% {
-    transform: translateY(-7rem);
+    0%{
+        transform:rotate(45deg) translateY(-40rem);
     }
 `;
 

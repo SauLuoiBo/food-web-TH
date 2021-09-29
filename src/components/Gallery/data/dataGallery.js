@@ -64,8 +64,8 @@ export const dataFeedback = [
     },
     {
         img: doan,
-        name: 'Đoàn',
-        text: '',
-        client: 'bạn'
+        name: 'Trương Văn Đoàn',
+        text: 'đã ăn và vẫn muốn đc ăn thêm một lần nữa',
+        client: 'bạn cùng phòng'
     },
 ]

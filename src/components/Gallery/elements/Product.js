@@ -9,7 +9,6 @@ const Product = (props) => {
 			<img src={props.img} alt="img" />
 			<h3>{props.text}</h3>
 		</Wrapper>
-		;
 	</Roll>)
 };
 
